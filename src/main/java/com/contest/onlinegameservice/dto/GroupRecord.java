@@ -1,6 +1,6 @@
 package com.contest.onlinegameservice.dto;
 
-import java.util.List;
+import java.util.ArrayList;
 
-public record GroupRecord(int groupCount, List<Clan> clans) {
+public record GroupRecord(int groupCount, ArrayList<Clan> clans) {
 }
