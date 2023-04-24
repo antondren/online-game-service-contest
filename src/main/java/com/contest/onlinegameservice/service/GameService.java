@@ -45,7 +45,7 @@ public class GameService {
         List<Clan> group = new ArrayList<>();
         int groupSize = 0;
 
-        while (iterator.hasNext()) {
+        while (iterator.hasNext() && groupSize != groupCount) {
             Clan currentClan = iterator.next();
             if (groupSize + currentClan.getNumberOfPlayers() <= groupCount) {
                 group.add(currentClan);
